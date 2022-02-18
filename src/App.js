@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class App extends Component {
   render() {
@@ -8,10 +8,17 @@ export default class App extends Component {
     id: 'myID'
   }
 
+  const style = {
+    fontSize: '60px',
+    color: 'orange',
+    lineHeight: '1'
+  }
+
+  const {fontSize, color, lineHeight} = style;
     return (
-      <div className="App">
-        <h2 {...obj}>Hello React</h2>
-        <p>Would you be react with Me!!</p>
+      <div style={{textAlign: 'center'}} className="App">
+        <h2 style={{fontSize, color, lineHeight}} {...obj}>Hello React</h2>
+        <p style={{fontSize: '30px'}}>Would you be react with Me!!</p>
       </div>
     )
   }
