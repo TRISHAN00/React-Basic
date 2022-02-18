@@ -1,14 +1,18 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-class App extends Component {
+export default class App extends Component {
   render() {
 
-    return React.createElement('div', {className: 'App'}, [
-      React.createElement('h2', null, 'Hello World'),
-      React.createElement('p', null, 'I am Para')
-    ])
-  
+  const obj = {
+    title : 'Heading Title',
+    id: 'myID'
+  }
+
+    return (
+      <div className="App">
+        <h2 {...obj}>Hello React</h2>
+        <p>Would you be react with Me!!</p>
+      </div>
+    )
   }
 }
-
-export default App;
