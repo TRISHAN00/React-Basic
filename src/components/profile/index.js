@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import Bio from './Bio';
+import Links from './Links';
+import './profile.style.css';
+import Skills from './Skills';
 
 class index extends Component {
     render() {
         return (
-            <div>
-                <h1>I am profile</h1>
+            <div className='container'>
+                <Bio/>
+                <Skills/>
+                <Links/>
             </div>
         );
     }

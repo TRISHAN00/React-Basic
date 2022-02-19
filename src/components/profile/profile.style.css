@@ -1,0 +1,34 @@
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  height: 280px;
+  width: 500px;
+  padding: 10px;
+}
+
+.Font-size {
+  font-size: 24px;
+}
+
+.skills {
+  margin-top: 20px;
+}
+.skills li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: aliceblue;
+  padding: 5px 10px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.Links {
+  margin-top: 20px;
+}
+.Social-Links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.Social-Links li a {
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 18px;
+}

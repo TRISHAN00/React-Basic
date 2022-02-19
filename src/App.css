@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
-.App h2 {
-  font-size: 60px;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
 }
