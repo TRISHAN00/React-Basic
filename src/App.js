@@ -19,6 +19,7 @@ export default class App extends Component {
       <div style={{textAlign: 'center'}} className="App">
         <h2 style={{fontSize, color, lineHeight}} {...obj}>Hello React</h2>
         <p style={{fontSize: '30px'}}>Would you be react with Me!!</p>
+        <p>{new Date().toLocaleDateString()}</p>
       </div>
     )
   }
