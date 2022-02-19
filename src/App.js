@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Index from './components/profile/index';
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends Component {
         <h2 style={{fontSize, color, lineHeight}} {...obj}>Hello React</h2>
         <p style={{fontSize: '30px'}}>Would you be react with Me!!</p>
         <p>{new Date().toLocaleDateString()}</p>
+        <Index/>
       </div>
     )
   }
