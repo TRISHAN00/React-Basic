@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <div className="skills">
-      <h3 className="Font-size">Skills:</h3>
+      <h3 className="Font-size Font-Color">Skills:</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
