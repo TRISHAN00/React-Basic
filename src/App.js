@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Count from "./components/Count/Index";
+import Timer from "./components/Timer/Index";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Count/>
+        <Timer/>
       </div>
     );
   }

@@ -15,3 +15,21 @@ body {
 li {
   list-style: none;
 }
+
+.Btn {
+  background-color: 0;
+  border: 1px solid black;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.top-count {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Time-container {
+  text-align: center;
+}
+.control-buttons {
+  margin-top: 10px;
+}
