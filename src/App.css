@@ -33,3 +33,10 @@ li {
 .control-buttons {
   margin-top: 10px;
 }
+.Time-container {
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}

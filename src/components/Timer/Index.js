@@ -21,7 +21,7 @@ class Timer extends Component {
     startTimer = () => {
         if(this.state.count > 0 && !this.intervalId) {
             this.intervalId = setInterval(() => {
-                this.setState({count : this.state.count - 1})
+                this.setState({count : this.state.count + 1})
                 if(this.state.count === 0) {
                     alert('Timer Finished')
                     clearInterval(this.intervalId)
@@ -57,7 +57,7 @@ class Timer extends Component {
                 </div>
                 <div className='control-buttons'>
                     <button onClick={this.startTimer} className='Btn'>Start</button>
-                    <button onClick={this.stopTimer} className='Btn'>Stop</button>
+                    <button onClick={this.stopTimer} className='Btn'>Pause</button>
                     <button onClick={this.resetTimer} className='Btn'>Reset</button>
                 </div>
             </div>
