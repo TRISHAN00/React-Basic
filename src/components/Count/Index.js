@@ -8,7 +8,9 @@ class Count extends Component {
     return (
       <div>
         <h2>Count Increase: {this.state.count} </h2>
-        <button onClick={() => this.setState({count: this.state.count + 1})}>Click ++</button>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click ++
+        </button>
       </div>
     );
   }
