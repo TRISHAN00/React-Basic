@@ -40,3 +40,10 @@ li {
   overflow: hidden;
   border-radius: 10px;
 }
+.Time-container h2 {
+  font-size: 31px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 7px;
+  font-family: inherit;
+}
