@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Calculator from "./components/Calculator/Index";
+import Event from "./components/event/Index";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Calculator/>
+        <Event/>
       </div>
     );
   }

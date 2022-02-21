@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import CalculatorUI from './CalculatorUI';
 
-class Calculator extends Component {
+class Event extends Component {
     render() {
         return (
             <div className='container'>
-                <CalculatorUI/>
+                <h2>Event</h2>
             </div>
         );
     }
 }
 
-export default Calculator;
+export default Event;
