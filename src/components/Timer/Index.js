@@ -52,7 +52,7 @@ class Timer extends Component {
 
     render() {
         return (
-            <div className='Time-container'>
+            <div className='container'>
                 <h2>Simple Counter</h2>
                 <div className='top-count'>
                     <button className='Btn' onClick={this.decrementCount}> - </button>

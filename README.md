@@ -68,4 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# React-Basic
+
+# React-Styled
+
+There are four main method to style react app.
+
+- Inline CSS
+- CSS Class
+- CSS Module
+- JSS (Styled Component)
