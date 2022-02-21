@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class Timer extends Component {
     state = {
         count : 0,
+        minute: 0
     }
 
     intervalId = null;
@@ -46,6 +47,8 @@ class Timer extends Component {
         }
     }
 
+    
+
     render() {
         return (
             <div className='Time-container'>
@@ -59,6 +62,9 @@ class Timer extends Component {
                     <button onClick={this.startTimer} className='Btn'>Start</button>
                     <button onClick={this.stopTimer} className='Btn'>Pause</button>
                     <button onClick={this.resetTimer} className='Btn'>Reset</button>
+                </div>
+                <div className='minute-section'>
+                    <span>Minute : {Math.floor(this.state.count / 60)}</span>
                 </div>
             </div>
         );
