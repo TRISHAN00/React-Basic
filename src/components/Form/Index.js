@@ -28,21 +28,23 @@ class Form extends Component {
   handleOnSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
+    e.target.reset()
   };
 
   handleSkillChange = (e) => {
-    if(e.target.checked) {
+    if (e.target.checked) {
       this.setState({
-        skills : [...this.state.skills, e.target.value]
-      })
-    }
-    else {
-      const skills = this.state.skills.filter(skill => skill !== e.target.value);
+        skills: [...this.state.skills, e.target.value],
+      });
+    } else {
+      const skills = this.state.skills.filter(
+        (skill) => skill !== e.target.value
+      );
       this.setState({
-        skills
-      })
+        skills,
+      });
     }
-  }
+  };
 
   render() {
     return (
@@ -114,18 +116,33 @@ class Form extends Component {
             name="gender"
             value="Other"
           />
+          
           Other
-          
           <h3>Skills</h3>
-          <input checked={this.state.skills.includes('Java')} onChange={this.handleSkillChange} type="checkbox" value="Java" name="skills" />
+          <input
+            checked={this.state.skills.includes("Java")}
+            onChange={this.handleSkillChange}
+            type="checkbox"
+            value="Java"
+            name="skills"
+          />
           JAVA
-
-          <input checked={this.state.skills.includes('JavaScript')} onChange={this.handleSkillChange} type="checkbox" value="JavaScript" name="skills" />
+          <input
+            checked={this.state.skills.includes("JavaScript")}
+            onChange={this.handleSkillChange}
+            type="checkbox"
+            value="JavaScript"
+            name="skills"
+          />
           JavaScript
-
-          <input checked={this.state.skills.includes('PHP')} onChange={this.handleSkillChange} type="checkbox" value="PHP" name="skills" />
+          <input
+            checked={this.state.skills.includes("PHP")}
+            onChange={this.handleSkillChange}
+            type="checkbox"
+            value="PHP"
+            name="skills"
+          />
           PHP
-          
           <br />
           <input
             onChange={this.handleCheckbox}
