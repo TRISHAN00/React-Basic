@@ -7,7 +7,9 @@ class Form extends Component {
     lastName: "",
     password: "",
     country: "",
-    birthday: ""
+    birthday: "",
+    gender: "",
+    agree: false
   };
 
   handleOnChange = (e) => {
@@ -68,6 +70,15 @@ class Form extends Component {
             onChange={this.handleOnChange}
             type="date"
           />
+          <h3>Gender</h3>
+          <input onChange={this.handleOnChange} type="radio" name="gender" value="Male" />
+          Male
+          <br />
+          <input onChange={this.handleOnChange} type="radio" name="gender" value="Female" />
+          Female
+          <br />
+          <input onChange={this.handleOnChange} type="radio" name="gender" value="Other" />
+          Other
           <br />
           <br />
           <input className="form-control btn btn-primary" type="submit" />
