@@ -28,13 +28,13 @@ class Form extends Component {
                 <h2>Submit Your Data...</h2>
                 <form onSubmit={this.handleOnSubmit}>
                     <h3>First Name: {firstName}</h3>
-                    <input name='firstName' onChange={this.handleOnChange} type="text" />
+                    <input className='form-control' name='firstName' onChange={this.handleOnChange} type="text" />
                     <h3>Last Name</h3>
-                    <input name='lastName' onChange={this.handleOnChange} type="text" />
+                    <input className='form-control' name='lastName' onChange={this.handleOnChange} type="text" />
                     <h3>Password</h3>
-                    <input name='password' onChange={this.handleOnChange} type="password" />
+                    <input className='form-control' name='password' onChange={this.handleOnChange} type="password" />
                     <h3>Country</h3>
-                    <select name='country' onChange={this.handleOnChange} >
+                    <select className='form-control' name='country' onChange={this.handleOnChange} >
                         <option>Select Country</option>
                         <option value="Bangladesh">Bangladesh</option>
                         <option value="India">India</option>
@@ -44,7 +44,7 @@ class Form extends Component {
                     </select>
                     <br/>
                     <br/>
-                    <input type="submit" />
+                    <input className='form-control' type="submit" />
                 </form>
             </div>
         );
