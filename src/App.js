@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Event from "./components/event/Index";
+import Form from "./components/Form/Index";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Event/>
+        <Form/>
       </div>
     );
   }
