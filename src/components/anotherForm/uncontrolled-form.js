@@ -10,6 +10,7 @@ class UncontrolledForm extends Component {
             password : e.target.password.value,
         }
         console.log(data);
+        e.target.reset()
     }
      
     render() {
