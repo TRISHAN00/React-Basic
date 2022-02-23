@@ -37,7 +37,10 @@ class Form extends Component {
       })
     }
     else {
-
+      const skills = this.state.skills.filter(skill => skill !== e.target.value);
+      this.setState({
+        skills
+      })
     }
   }
 
