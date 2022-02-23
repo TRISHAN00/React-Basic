@@ -10,7 +10,15 @@ class Form extends Component {
     }
 
     handleOnChange = (e) => {
-        [e.target.name] = [e.target.value]
+        this.setState({
+            [e.target.name] : e.target.value
+        })
+        
+    }
+
+    handleOnSubmit = (e) => {
+        e.preventDefault()
+        console.log(this.state);
     }
 
     render() {
@@ -18,15 +26,15 @@ class Form extends Component {
         return (
             <div className='container'>
                 <h2>Submit Your Data...</h2>
-                <form>
+                <form onSubmit={this.handleOnSubmit}>
                     <h3>First Name: {firstName}</h3>
-                    <input onChange={this.handleOnChange} type="text" />
+                    <input name='firstName' onChange={this.handleOnChange} type="text" />
                     <h3>Last Name</h3>
-                    <input onChange={this.handleOnChange} type="text" />
+                    <input name='lastName' onChange={this.handleOnChange} type="text" />
                     <h3>Password</h3>
-                    <input onChange={this.handleOnChange} type="password" />
+                    <input name='password' onChange={this.handleOnChange} type="password" />
                     <h3>Country</h3>
-                    <select onChange={this.handleOnChange} >
+                    <select name='country' onChange={this.handleOnChange} >
                         <option>Select Country</option>
                         <option value="Bangladesh">Bangladesh</option>
                         <option value="India">India</option>
