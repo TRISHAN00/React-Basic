@@ -7,6 +7,7 @@ class Form extends Component {
     lastName: "",
     password: "",
     country: "",
+    birthday: ""
   };
 
   handleOnChange = (e) => {
@@ -21,7 +22,6 @@ class Form extends Component {
   };
 
   render() {
-    
     return (
       <div className="container">
         <h2>Submit Your Data...</h2>
@@ -61,6 +61,13 @@ class Form extends Component {
             <option value="London">London</option>
             <option value="China">China</option>
           </select>
+          <h3>Birthday</h3>
+          <input
+            className="form-control"
+            name="date"
+            onChange={this.handleOnChange}
+            type="date"
+          />
           <br />
           <br />
           <input className="form-control btn btn-primary" type="submit" />
