@@ -9,12 +9,18 @@ class Form extends Component {
     country: "",
     birthday: "",
     gender: "",
-    agree: false
+    agree: false,
   };
 
   handleOnChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
+    });
+  };
+
+  handleCheckbox = (e) => {
+    this.setState({
+      agree: e.target.checked,
     });
   };
 
@@ -71,14 +77,37 @@ class Form extends Component {
             type="date"
           />
           <h3>Gender</h3>
-          <input onChange={this.handleOnChange} type="radio" name="gender" value="Male" />
+          <input
+            onChange={this.handleOnChange}
+            type="radio"
+            name="gender"
+            value="Male"
+          />
           Male
           <br />
-          <input onChange={this.handleOnChange} type="radio" name="gender" value="Female" />
+          <input
+            onChange={this.handleOnChange}
+            type="radio"
+            name="gender"
+            value="Female"
+          />
           Female
           <br />
-          <input onChange={this.handleOnChange} type="radio" name="gender" value="Other" />
+          <input
+            onChange={this.handleOnChange}
+            type="radio"
+            name="gender"
+            value="Other"
+          />
           Other
+          <br />
+          <input
+            onChange={this.handleCheckbox}
+            type="checkbox"
+            name="agree"
+            checked={this.agree}
+          />
+          I agree to provide all the data my self.
           <br />
           <br />
           <input className="form-control btn btn-primary" type="submit" />
