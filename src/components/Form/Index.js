@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import './Index.module.css';
 
 class Form extends Component {
-    
+    state = {
+        firstName : '',
+        lastName: '',
+        password: '',
+        country: ''
+    }
     render() {
         
         return (
