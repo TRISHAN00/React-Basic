@@ -10,6 +10,7 @@ class Form extends Component {
     birthday: "",
     gender: "",
     agree: false,
+    skills: [],
   };
 
   handleOnChange = (e) => {
@@ -100,6 +101,13 @@ class Form extends Component {
             value="Other"
           />
           Other
+          <h3>Skills</h3>
+          <input type="checkbox" value="Java" name="skills" />
+          JAVA
+          <input type="checkbox" value="Javascript" name="skills" />
+          Javascript
+          <input type="checkbox" value="PHP" name="skills" />
+          PHP
           <br />
           <input
             onChange={this.handleCheckbox}
