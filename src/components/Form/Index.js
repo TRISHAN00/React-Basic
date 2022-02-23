@@ -30,6 +30,17 @@ class Form extends Component {
     console.log(this.state);
   };
 
+  handleSkillChange = (e) => {
+    if(e.target.checked) {
+      this.setState({
+        skills : [...this.state.skills, e.target.value]
+      })
+    }
+    else {
+
+    }
+  }
+
   render() {
     return (
       <div className="container">
@@ -101,13 +112,17 @@ class Form extends Component {
             value="Other"
           />
           Other
+          
           <h3>Skills</h3>
-          <input type="checkbox" value="Java" name="skills" />
+          <input checked={this.state.skills.includes('Java')} onChange={this.handleSkillChange} type="checkbox" value="Java" name="skills" />
           JAVA
-          <input type="checkbox" value="Javascript" name="skills" />
-          Javascript
-          <input type="checkbox" value="PHP" name="skills" />
+
+          <input checked={this.state.skills.includes('JavaScript')} onChange={this.handleSkillChange} type="checkbox" value="JavaScript" name="skills" />
+          JavaScript
+
+          <input checked={this.state.skills.includes('PHP')} onChange={this.handleSkillChange} type="checkbox" value="PHP" name="skills" />
           PHP
+          
           <br />
           <input
             onChange={this.handleCheckbox}
@@ -120,6 +135,7 @@ class Form extends Component {
           <br />
           <input className="form-control btn btn-primary" type="submit" />
         </form>
+        <h1>{this.state.skills}</h1>
       </div>
     );
   }
