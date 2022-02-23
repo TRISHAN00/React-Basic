@@ -8,20 +8,25 @@ class Form extends Component {
         password: '',
         country: ''
     }
+
+    handleOnChange = (e) => {
+        [e.target.name] = [e.target.value]
+    }
+
     render() {
-        
+        const {firstName} = this.state
         return (
             <div className='container'>
                 <h2>Submit Your Data...</h2>
                 <form>
-                    <h3>First Name</h3>
-                    <input type="text" />
+                    <h3>First Name: {firstName}</h3>
+                    <input onChange={this.handleOnChange} type="text" />
                     <h3>Last Name</h3>
-                    <input type="text" />
+                    <input onChange={this.handleOnChange} type="text" />
                     <h3>Password</h3>
-                    <input type="password" />
+                    <input onChange={this.handleOnChange} type="password" />
                     <h3>Country</h3>
-                    <select>
+                    <select onChange={this.handleOnChange} >
                         <option>Select Country</option>
                         <option value="Bangladesh">Bangladesh</option>
                         <option value="India">India</option>
