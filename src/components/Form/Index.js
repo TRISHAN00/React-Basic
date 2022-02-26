@@ -47,6 +47,7 @@ class Form extends Component {
   };
 
   render() {
+    const {firstName, lastName, password, country} = this.state
     return (
       <div className="container">
         <h2>Submit Your Data...</h2>
@@ -58,6 +59,7 @@ class Form extends Component {
             onChange={this.handleOnChange}
             type="text"
             id="firstName"
+            value={firstName}
           />
           <h3>Last Name</h3>
           <input
@@ -65,6 +67,7 @@ class Form extends Component {
             name="lastName"
             onChange={this.handleOnChange}
             type="text"
+            value={lastName}
           />
           <h3>Password</h3>
           <input
@@ -72,12 +75,14 @@ class Form extends Component {
             name="password"
             onChange={this.handleOnChange}
             type="password"
+            value={password}
           />
           <h3>Country</h3>
           <select
             className="form-control"
             name="country"
             onChange={this.handleOnChange}
+            value={country}
           >
             <option>Select Country</option>
             <option value="Bangladesh">Bangladesh</option>
