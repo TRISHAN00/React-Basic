@@ -28,7 +28,17 @@ class Form extends Component {
   handleOnSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    e.target.reset()
+    e.target.reset();
+    this.setState({
+      firstName: "",
+      lastName: "",
+      password: "",
+      country: "",
+      birthday: "",
+      gender: "",
+      agree: false,
+      skills: [],
+    });
   };
 
   handleSkillChange = (e) => {
@@ -47,7 +57,7 @@ class Form extends Component {
   };
 
   render() {
-    const {firstName, lastName, password, country} = this.state
+    const { firstName, lastName, password, country } = this.state;
     return (
       <div className="container">
         <h2>Submit Your Data...</h2>
@@ -121,7 +131,6 @@ class Form extends Component {
             name="gender"
             value="Other"
           />
-          
           Other
           <h3>Skills</h3>
           <input

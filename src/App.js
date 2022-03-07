@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import SplitForm from "./components/spliteForm/Index";
+import SplitForm from "./components/SplitForm/Index";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <SplitForm/>
+        <SplitForm />
       </div>
     );
   }
